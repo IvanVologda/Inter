@@ -9,6 +9,8 @@
             double xToFind = 2.0;
             double result = NewtonInterpolate(X, Y, xToFind);
             Console.WriteLine($"Результат интерполяции: {result}");
+
+            // вместо массивов я использовал list. И копировал списки с помощью new List<double>(Y) где Y это список, который нужно скопировать
         }
 
         static List<double> CalculationCoeffs(List<double> X, List<double> Y)
